@@ -1,0 +1,64 @@
+.container-fluid {
+  background-color: black;
+  color: lime;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 2%;
+}
+
+header {
+  border: 1px solid lime;
+  max-width: 350px;
+  margin: auto;
+}
+
+header h1 {
+  border-bottom: 1px solid lime;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.score-you,
+.score-bot {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.score {
+  font-size: 40px;
+}
+
+.gameMessage {
+  margin-top: 2%;
+  -webkit-animation: flash linear 3s infinite;
+  animation: flash linear 3s infinite;
+
+
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+header {
+  animation-name: annoying2;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    border-width: 4px;
+}
+
+@keyframes annoying2 {
+  0%   {border-color: #00FFFF;}
+  25%  {border-color: #FF00FF;}
+  50%  {border-color: #FFFF00;}
+  100% {border-color: #00FF33;}
+}
+
